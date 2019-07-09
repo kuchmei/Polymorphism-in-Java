@@ -2,6 +2,10 @@ package University;
 
 public class FullTimeStudent extends Student {
 
+    public FullTimeStudent(short age, String name, Gradebook gradebook, Pen pen) {
+        super(age, name, gradebook, pen);
+    }
+
     @Override
     void printInformationAboutTheStudent() {
         System.out.println("I am a full-time student of studying");

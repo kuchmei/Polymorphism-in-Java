@@ -2,10 +2,8 @@ package University;
 
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Student();
-        student1.printStaticMethod();
-        student1.printInformationAboutTheStudent();
-        Student student2 = new FullTimeStudent();
+        Pen pen = new Pen("Black", 0.7f);
+        Student student2 = new FullTimeStudent(20,"Denys", new Gradebook(4.0f,4,320155));
         student2.printInformationAboutTheStudent();
         student2.printStaticMethod();
         Student student3 = new PartTimeStudent();

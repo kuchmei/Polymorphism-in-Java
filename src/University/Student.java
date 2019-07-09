@@ -2,12 +2,24 @@ package University;
 
 import java.util.List;
 
-public class Student extends Person {
+ abstract class Student extends Person {
 
-    private List<Gradebook>gradebooks;
-    private List<Pen>pens;
+    Gradebook gradebook;
+    Pen pen;
+    List<Gradebook> gradebooks;
+    List<Pen> pens;
 
-    void printInformationAboutTheStudent(){
+     public Student(short age, String name, Gradebook gradebook, Pen pen) {
+         super(age, name);
+         this.gradebook = gradebook;
+         this.pen = pen;
+     }
+
+     void CalculationOfScholarship(int average, int scholarship){
+
+    }
+
+     void printInformationAboutTheStudent(){
         System.out.println("We are all students");
     }
 

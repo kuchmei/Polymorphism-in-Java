@@ -1,5 +1,5 @@
 package University;
 
-public interface AccountManager <Salary extends University.Salary, Person> {
-    void calculateSalary(Salary salary, Person person);
+public interface AccountManager <T extends University.Salary, U > {
+    void calculateSalary(T salary, U person);
 }
