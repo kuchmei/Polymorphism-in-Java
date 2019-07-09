@@ -1,7 +1,11 @@
 package University;
 
 public  class Teacher extends Person {
-    void printSalary( int rate, int  premium){
+
+    public Teacher(short age, String name) {
+        super(age, name);
+    }
+    void printSalary(int rate, int  premium){
         System.out.println("The salary of this teacher : " + (rate+premium));
     }
     void printSalary(int rate){

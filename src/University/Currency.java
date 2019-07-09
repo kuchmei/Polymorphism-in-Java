@@ -1,6 +1,6 @@
 package University;
 
-public enum Salary{
+public enum Currency {
     UAH,
     USD;
 }

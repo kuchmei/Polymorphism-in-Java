@@ -8,6 +8,7 @@ import java.util.List;
     Pen pen;
     List<Gradebook> gradebooks;
     List<Pen> pens;
+    int scholarship ;
 
      public Student(short age, String name, Gradebook gradebook, Pen pen) {
          super(age, name);
@@ -15,15 +16,15 @@ import java.util.List;
          this.pen = pen;
      }
 
-     void CalculationOfScholarship(int average, int scholarship){
-
-    }
-
-     void printInformationAboutTheStudent(){
-        System.out.println("We are all students");
-    }
-
-    static void printStaticMethod(){
-        System.out.println("This is a student");
-    }
+     void CalculationOfScholarship(double average, int scholarship){
+         gradebook.averageScore = average;
+         this.scholarship = scholarship;
+         if (average>4){
+             scholarship=1300;
+         }
+         else scholarship=0;
+     }
+     Currency getCurrency(){
+         return Currency.UAH;
+     }
 }

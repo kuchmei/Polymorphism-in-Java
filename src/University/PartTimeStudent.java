@@ -6,8 +6,4 @@ public class PartTimeStudent extends Student {
         super(age, name, gradebook, pen);
     }
 
-    @Override
-    void printInformationAboutTheStudent() {
-        System.out.println("I am a part-time student of studying");
-    }
 }

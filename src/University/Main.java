@@ -14,11 +14,11 @@ public class Main {
         teacher1.printSalary(35,9,20);
         teacher1.printSalary(35,9,19,500);
         Accounting  accounting = new Accounting ();
-        accounting.calculateSalary(Salary.UAH, student2);
+        accounting.calculateSalary(University.Currency.UAH, student2);
         Accounting  accounting1= new Accounting();
-        accounting1.calculateSalary(Salary.USD,teacher1);
+        accounting1.calculateSalary(University.Currency.USD,teacher1);
         Accounting accounting2 = new Accounting();
-        accounting2.calculateSalary(Salary.UAH,student3);
+        accounting2.calculateSalary(University.Currency.UAH,student3);
 
 
     }
