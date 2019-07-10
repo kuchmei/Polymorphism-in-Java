@@ -1,7 +1,4 @@
-package University;
-
-import java.util.ArrayList;
-import java.util.List;
+package Company;
 
 public class Pen {
     private String color;
@@ -12,23 +9,19 @@ public class Pen {
         this.lineThickness = lineThickness;
     }
 
-    void write(){
-        System.out.println("Pen write!");
-    }
-
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public float getLineThickness() {
         return lineThickness;
     }
 
-    public void setLineThickness(float lineThickness) {
-        this.lineThickness = lineThickness;
+    @Override
+    public String toString() {
+        return "Pen{" +
+                "color='" + color + '\'' +
+                ", lineThickness=" + lineThickness +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package University;
+package Company;
 
 public enum Currency {
     UAH,

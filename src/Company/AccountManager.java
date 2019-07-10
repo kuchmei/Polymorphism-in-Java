@@ -1,7 +1,7 @@
-package University;
+package Company;
 
 public interface AccountManager <T extends Currency, U extends Person > {
-    void getSalary(U person);
-    T getCurrensy();
+    int getSalary(U person);
+    T getCurrency();
 
 }
