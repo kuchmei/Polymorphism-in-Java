@@ -1,6 +1,5 @@
 package Company;
 
-import java.util.List;
 
 public class FullTimeStudent extends Student {
     int numberOfAbsenteeism;
@@ -12,7 +11,7 @@ public class FullTimeStudent extends Student {
 
     void  checkNumberOfAbsenteeism(FullTimeStudent student){
         if (numberOfAbsenteeism>50){
-            System.out.println("You have many absenteeism" + student.toString());
+            System.out.println("You have many absenteeism " + student.toString());
         }
     }
 
@@ -22,8 +21,6 @@ public class FullTimeStudent extends Student {
                 "stateStudent=" + stateStudent +
                 ", gradebook=" + gradebook +
                 ", pen=" + pen +
-                ", gradebooks=" + gradebooks +
-                ", pens=" + pens +
                 ", scholarship=" + scholarship +
                 '}';
     }

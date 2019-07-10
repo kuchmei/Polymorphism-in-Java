@@ -21,8 +21,6 @@ public class PartTimeStudent extends Student {
         return "PartTimeStudent{" +
                 "gradebook=" + gradebook +
                 ", pen=" + pen +
-                ", gradebooks=" + gradebooks +
-                ", pens=" + pens +
                 ", scholarship=" + scholarship +
                 ", stateStudent=" + stateStudent +
                 '}';
