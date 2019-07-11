@@ -1,4 +1,4 @@
-package Company;
+package company;
 
 public  class Teacher extends Person {
     private int rate;
@@ -17,11 +17,11 @@ public  class Teacher extends Person {
         if (experiense<5) {
             System.out.println("This teacher is newcomer!");
         }
-        if(experiense>=5 && experiense<10){
+        else if(experiense>=5 && experiense<10){
             System.out.println("This teacher is experienced!");
         }
-        if (experiense>=10){
-            System.out.println("This teacher is verye xperienced!");
+        else if (experiense>=10){
+            System.out.println("This teacher is very experienced!");
         }
     }
 

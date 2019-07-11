@@ -1,9 +1,9 @@
-package Company;
+package company;
 
 
 public class FullTimeStudent extends Student {
-    int numberOfAbsenteeism;
-    int numberOfTermPapers;
+    private int numberOfAbsenteeism;
+    private int numberOfTermPapers;
 
     public FullTimeStudent(int age, String name, Gradebook gradebook, Pen pen, boolean stateStudent, int numberOfAbsenteeism, int numberOfTermPapers) {
         super(age, name, gradebook, pen, stateStudent);
@@ -21,10 +21,13 @@ public class FullTimeStudent extends Student {
     @Override
     public String toString() {
         return "FullTimeStudent{" +
-                "stateStudent=" + stateStudent +
-                ", gradebook=" + gradebook +
-                ", pen=" + pen +
-                ", scholarship=" + scholarship +
+                ", gradebook=" + getGradebook() +
+                ", pen=" + getPen() +
+                ", scholarship=" + getScholarship() +
                 '}';
+    }
+
+    public int getNumberOfTermPapers() {
+        return numberOfTermPapers;
     }
 }

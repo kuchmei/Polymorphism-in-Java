@@ -1,6 +1,6 @@
-package Company;
+package company;
 
-public class TeacherSalary implements AccountManager <Currency, Teacher> {
+public class TeacherSalary implements Accounting<Currency, Teacher> {
     int salary;
 
     @Override

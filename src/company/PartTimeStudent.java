@@ -1,10 +1,8 @@
-package Company;
-
-import java.util.List;
+package company;
 
 public class PartTimeStudent extends Student {
-    int numberOfVisits;
-    int numberOfControlWorks;
+    private int numberOfVisits;
+    private int numberOfControlWorks;
 
     public PartTimeStudent(int age, String name, Gradebook gradebook, Pen pen, boolean stateStudent, int numberOfVisits, int numberOfControlWorks) {
         super(age, name, gradebook, pen, stateStudent);
@@ -21,10 +19,13 @@ public class PartTimeStudent extends Student {
     @Override
     public String toString() {
         return "PartTimeStudent{" +
-                "gradebook=" + gradebook +
-                ", pen=" + pen +
-                ", scholarship=" + scholarship +
-                ", stateStudent=" + stateStudent +
+                "gradebook=" + getGradebook() +
+                ", pen=" + getPen() +
+                ", scholarship=" + getScholarship() +
                 '}';
+    }
+
+    public int getNumberOfControlWorks() {
+        return numberOfControlWorks;
     }
 }

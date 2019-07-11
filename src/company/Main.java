@@ -1,4 +1,4 @@
-package Company;
+package company;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,13 +14,13 @@ public class Main {
         student2.countingTheNumberOfWorks((FullTimeStudent) student2);
         student3.countingTheNumberOfWorks((PartTimeStudent) student3);
         student3.addPen(pen1);
-        Teacher teacher = new Teacher(45, "Vasyl Petrovich", 25,160,6);
-        teacher.checkExperiense();
+        Teacher teacher = new Teacher(45, "Vasyl Petrovich", 25,160,10);
         StudentSalary studentSalary = new StudentSalary();
         studentSalary.getSalary(student2);
         studentSalary.getSalary(student3);
         TeacherSalary teacherSalary = new TeacherSalary();
         teacherSalary.getSalary(teacher);
+        teacher.checkExperiense();
         Gradebook gradebook2= new Gradebook(4.8f,2,854476);
         FullTimeStudent student = new FullTimeStudent(19, "Vova",gradebook2,pen,true,70,2 );
         student.addGradebook(gradebook2);
