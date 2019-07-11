@@ -4,10 +4,12 @@ import java.util.List;
 
 public class PartTimeStudent extends Student {
     int numberOfVisits;
+    int numberOfControlWorks;
 
-    public PartTimeStudent(int age, String name, Gradebook gradebook, Pen pen, boolean stateStudent, int numberOfVisits) {
+    public PartTimeStudent(int age, String name, Gradebook gradebook, Pen pen, boolean stateStudent, int numberOfVisits, int numberOfControlWorks) {
         super(age, name, gradebook, pen, stateStudent);
         this.numberOfVisits = numberOfVisits;
+        this.numberOfControlWorks = numberOfControlWorks;
     }
 
     void checkNumberOfVisits(PartTimeStudent student){

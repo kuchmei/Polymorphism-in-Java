@@ -30,4 +30,10 @@ import java.util.List;
          System.out.println("Add new gradebook "+ gradebook.toString());
          gradebooks.add(gradebook);
      }
+     void countingTheNumberOfWorks(FullTimeStudent student){
+         System.out.println(student.toString()+ " have " + student.numberOfTermPapers + " works" );
+     }
+     void countingTheNumberOfWorks(PartTimeStudent student){
+         System.out.println(student.toString()+ " have " + student.numberOfControlWorks + " works" );
+     }
 }
